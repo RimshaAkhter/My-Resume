@@ -1,0 +1,381 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    max-width: 1200px;
+    min-height: 1000px;
+    margin: 50px auto;
+    background-color: #f9fafc;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+}
+
+/* Left Side */
+.container .left_side {
+    background-color: #007acc;
+    padding: 40px;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/* Profile text */
+.profileText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.profileText .imgBox {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.profileText .imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    color: #f1f1f1;
+    font-size: 1.6em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span {
+    font-size: 0.85em;
+    font-weight: 300;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Contact Info */
+.contact-info {
+    padding-top: 40px;
+}
+
+.contact-info .title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.contact-info ul {
+    list-style: none;
+}
+
+.contact-info ul li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info ul li .icon {
+    font-size: 20px;
+    color: #b0e0ec;
+    margin-right: 15px;
+}
+
+.contact-info ul li span,
+.contact-info ul li a {
+    color: #d3d3d3;
+    font-weight: 300;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.contact-info ul li a:hover {
+    color: #f0f8ff;
+}
+
+/* Education Section */
+.education {
+    padding-top: 40px;
+    text-align: start;
+}
+
+.education .title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+}
+
+.education-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #007acc;
+}
+
+.education-year h5 {
+    font-size: 18px;
+    color: #f0f8ff;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.education-details h4 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.education-details .institution {
+    color: #333333;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Right Side */
+.container .right_side {
+    background-color: #eaeaea;
+    padding: 40px;
+    color: #333333;
+    border-radius: 10px;
+}
+
+/* About */
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: #007acc;
+    font-size: 1.1em;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555555;
+    font-size: 16px;
+}
+
+/* Experience */
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_company {
+    min-width: 150px;
+}
+
+.about .box .year_company h5 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 16px;
+}
+
+/* Skills */
+.skills .box {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 15px;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: #007acc;
+    font-weight: 500;
+}
+
+.skills .box .percent2 {
+    position: relative;
+    background-color: #dddddd;
+    width: 100%;
+    border-radius: 10px;
+    height: 10px;
+}
+
+.skills .box .percent2 div {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #007acc;
+}
+
+/* Language */
+.contact-info.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #dddddd;
+    display: block;
+    margin-top: 5px;
+}
+
+.contact-info.language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #1d1d1c;
+}
+
+.contact-info.language .text {
+    margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1440px) {
+    .container {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .profileText h2 {
+        font-size: 1.4em;
+    }
+
+    .contact-info .title,
+    .education .title {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .container .left_side,
+    .container .right_side {
+        padding: 30px;
+    }
+
+    .profileText h2 {
+        font-size: 1.3em;
+    }
+
+    .contact-info ul li {
+        align-items: flex-start;
+    }
+
+    .education .title,
+    .contact-info .title {
+        font-size: 1.1em;
+    }
+
+    .about .box {
+        flex-direction: column;
+    }
+
+    .skills .box {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .container .left_side,
+    .container .right_side {
+        padding: 20px;
+    }
+
+    .profileText h2 {
+        font-size: 1.2em;
+    }
+
+    .contact-info ul li {
+        font-size: 14px;
+    }
+
+    .education .title,
+    .contact-info .title {
+        font-size: 1em;
+    }
+
+    .about .box {
+        margin: 15px 0;
+    }
+
+    .skills .box {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .container .left_side,
+    .container .right_side {
+        padding: 15px;
+    }
+
+    .profileText h2 {
+        font-size: 1.1em;
+    }
+
+    .contact-info ul li {
+        font-size: 12px;
+    }
+
+    .education .title,
+    .contact-info .title {
+        font-size: 0.9em;
+    }
+
+    .about .box {
+        margin: 10px 0;
+    }
+
+    .skills .box {
+        grid-template-columns: 1fr;
+    }
+}
